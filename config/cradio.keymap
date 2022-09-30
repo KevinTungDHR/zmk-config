@@ -44,29 +44,29 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U    &kp Y   &kp QUOT
-		&kp A &kp R &kp S &kp T &kp G 			        	        &kp M &kp N &kp E &kp I &kp O
-		&mt Z Z &kp X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U &kp Y &kp QUOT
+		&kp A &kp R &kp S &kp T &kp G 			        	&kp M &kp N &kp E &kp I &kp O
+		&kp Z &kp X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
           				&mo EXT &kp LSHIFT  				&kp SPC &mo SYM 
 		>;
 		};
 
        		sym_layer {
 		bindings = <
-		&kp EXCL  &kp AT    &kp HASH    &kp COLON   &kp SEMI		        &kp EQUAL &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp KP_PLUS 
-		&kp BSLH    &kp PIPE    &kp LBRC      &kp LPAR     &kp LBKT 		&kp KP_ASTERISK &kp NUM_4  &kp NUM_5 &kp NUM_6  &kp KP_MINUS 
-		&kp MINUS    &kp UNDER 	&kp RBRC &kp RPAR  &kp RBKT 	            &kp NUM_0 &kp NUM_1 &kp NUM_2 &kp NUM_3  &kp KP_SLASH 
-					    &none  &none  					                    &trans &none 
+		&kp EXCL    &kp AT      &kp HASH    &kp COLON   &kp SEMI		    &kp EQUAL       &kp NUM_7   &kp NUM_8 &kp NUM_9  &kp KP_PLUS 
+		&kp BSLH    &kp PIPE    &kp LBRC    &kp LPAR    &kp LBKT 		    &kp KP_ASTERISK &kp NUM_4   &kp NUM_5 &kp NUM_6  &kp KP_MINUS 
+		&kp MINUS   &kp UNDER 	&kp RBRC    &kp RPAR    &kp RBKT 	        &kp NUM_0       &kp NUM_1   &kp NUM_2 &kp NUM_3  &kp KP_SLASH 
+					                                &none  &none  			&trans &none 
 		>;
 		};
 		
 	   // Main modifiers and arrow keys
 		    ext_layer {
 		bindings = <
-		&kp ESC  &trans &trans  &kp PSCRN  &kp INS    			        &kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
-		&sk LALT &sk LGUI &sk LSHIFT  &sk LCTRL  &sk RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
-		&kp LC(Z)  &kp LC(X) &kp LC(C) &kp RGUI   &kp LC(V)          &kp LC(BSPC) &kp BSPC &KP TAB &kp LC(V)   &kp ENTER
-					                        &none &none             &trans  &none
+		&kp ESC     &trans      &trans      &kp PSCRN  &kp INS    			&kp PG_UP    &kp HOME   &kp UP    &kp END     &kp CAPS
+		&sk LALT    &sk LGUI    &sk LSHIFT  &sk LCTRL  &sk RALT 			&kp PG_DN    &kp LEFT   &kp DOWN  &kp RIGHT   &kp DEL
+		&kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp RGUI   &kp LC(V)            &kp LC(BSPC) &kp BSPC   &KP TAB   &kp LC(V)   &kp ENTER
+					                                &none &none             &trans  &none
 		>;
 		};
 		
@@ -84,7 +84,7 @@
        		symbols_2_layer {
 		bindings = <
 		&none &none &none &none &none        &none &kp AMPS &kp GRAVE &kp TILDE &none 
-		&&none &none &none &none &none        &none &kp DOLLAR &kp PRCNT &kp CARET &none 
+		&none &none &none &none &none        &none &kp DOLLAR &kp PRCNT &kp CARET &none 
 		&none &none &none &none &none			  &none &none &none &kp HASH &none
           				 &none &none        	                &none &none 
 		>;
