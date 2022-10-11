@@ -10,10 +10,13 @@
 
 // Layer definitions
     #define BASE 0
-    #define SYM 1
-    #define EXT 2
-    #define FNC 3
-    #define SYM2 4
+		#define MACBASE 1
+    #define SYM 2
+    #define EXT 3
+    #define FNC 4
+    #define SYM2 5
+    #define MACEXT 6
+
 // -----------------
 
 &mt {
@@ -29,6 +32,7 @@
 				combo_sym2 {
 						timeout-ms = <200>;
 						key-positions = <31 33>;
+						layers = <0 2 3>;
 						bindings = <&mo SYM2>;
 				};
 				// both left thumb keys
@@ -37,6 +41,15 @@
 						key-positions = <30 33>;
 						bindings = <&mo FNC>;
 				};
+
+				// MAC internal-left & external-right thumb keys
+				combo_sym2 {
+						timeout-ms = <200>;
+						key-positions = <31 33>;
+						layers = <1 6>;
+						bindings = <&mo MACSYM2>;
+				};
+
     };
 
         keymap {
@@ -48,6 +61,17 @@
 		&kp A &kp R &kp S &kp T &kp G 			        	&kp M &kp N &kp E &kp I &kp O
 		&kp Z &kp X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
           				&mo EXT &kp LSHIFT  				&kp SPC &mo SYM 
+		>;
+		};
+
+		// MAC
+
+				mac_default_layer {
+		bindings = <
+		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L  &kp U &kp Y &kp QUOT
+		&kp A &kp R &kp S &kp T &kp G 			        	&kp M &kp N &kp E &kp I &kp O
+		&kp Z &kp X &kp C &kp D &kp V				        &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+          				&mo MACEXT &kp LSHIFT  				&kp SPC &mo MACSYM 
 		>;
 		};
 
@@ -63,7 +87,7 @@
 	   // Main modifiers and arrow keys
 		    ext_layer {
 		bindings = <
-		&kp ESC     &trans      &trans      &kp PSCRN  &kp INS    			&kp PG_UP    &kp HOME   &kp UP    &kp END     &kp CAPS
+		&kp ESC     &trans      &key_repeat     &kp PSCRN  &kp INS    			&kp PG_UP    &kp HOME   &kp UP    &kp END     &kp CAPS
 		&sk LALT    &sk LGUI    &sk LSHIFT  &sk LCTRL  &sk RALT 			&kp PG_DN    &kp LEFT   &kp DOWN  &kp RIGHT   &kp DEL
 		&kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp RGUI   &kp LC(V)            &kp LC(BSPC) &kp BSPC   &kp TAB   &kp LC(V)   &kp ENTER
 					                                &none &none             &trans  &none
@@ -75,7 +99,7 @@
 		bindings = <
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 		&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-		&none &none &none &none &none				          &none &none &none &none &none 
+		&tog MACBASE &none &none &none &none				          &none &none &none &none &none 
           				           &none &none              &none &none  
 		>;
 		};
@@ -89,6 +113,18 @@
           				 &none &none        	                &none &none 
 		>;
 		};
+
+		
+	   // Main modifiers and arrow keys
+		    mac_ext_layer {
+		bindings = <
+		&kp ESC     &trans      &key_repeat      &kp PSCRN  &kp INS    			&kp PG_UP    &kp HOME   &kp UP    &kp END     &kp CAPS
+		&sk LALT    &sk LGUI    &sk LSHIFT  &sk LGUI  &sk RALT 			&kp PG_DN    &kp LEFT   &kp DOWN  &kp RIGHT   &kp DEL
+		&kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp RGUI   &kp LG(V)            &kp LA(BSPC) &kp BSPC   &kp TAB   &kp LG(V)   &kp ENTER
+					                                &none &none             &trans  &none
+		>;
+		};
+   
         
 	};
 };
