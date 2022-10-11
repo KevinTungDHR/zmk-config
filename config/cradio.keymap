@@ -32,9 +32,9 @@
 				combo_sym2 {
 						timeout-ms = <200>;
 						key-positions = <31 33>;
-						layers = <0 2 3>;
 						bindings = <&mo SYM2>;
 				};
+
 				// both left thumb keys
 				combo_settings {
 						timeout-ms = <300>;
