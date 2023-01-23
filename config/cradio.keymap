@@ -110,7 +110,7 @@
 	   // Main modifiers and arrow keys
 		    mac_ext_layer {
 		bindings = <
-		&kp ESC     &LC(TILDE)      &key_repeat      &kp PSCRN  &kp INS    			&kp PG_UP    &kp HOME   &kp UP    &kp END     &kp CAPS
+		&kp ESC     &kp LC(TILDE)      &key_repeat      &kp PSCRN  &kp INS    			&kp PG_UP    &kp HOME  &kp UP    &kp END     &kp CAPS
 		&sk LALT    &sk LCTRL    &sk LSHIFT  &sk LGUI  &sk RALT 			&kp PG_DN    &kp LEFT   &kp DOWN  &kp RIGHT   &kp DEL
 		&kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp RGUI   &kp LG(V)            &kp LA(BSPC) &kp BSPC   &kp TAB   &kp LG(GRAVE)   &kp ENTER
 					                                &none &none             &trans  &none
