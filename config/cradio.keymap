@@ -99,7 +99,7 @@
         // Low frequency symbols.
        		symbols_2_layer {
 		bindings = <
-		&none &none &none &none &none        &none &kp AMPS &kp GRAVE &kp TILDE &none 
+		&bt BT_CLR  &none &none &none &none        &none &kp AMPS &kp GRAVE &kp TILDE &none 
 		&none &none &none &none &none        &none &kp DOLLAR &kp PRCNT &kp CARET &none 
 		&none &none &none &none &none			  &none &none &none &kp HASH &none
           				 &none &none        	                &none &none 
