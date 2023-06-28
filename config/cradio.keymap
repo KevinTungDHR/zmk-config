@@ -16,7 +16,7 @@
     #define FNC 4
     #define SYM2 5
     #define MACEXT 6
-	#define QWERTY 7
+	#define GAMEMAIN 7
 	#define GAMENUM 7
 
 // -----------------
@@ -93,7 +93,7 @@
 		bindings = <
 		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 		&kp LC(LA(LEFT)) &kp LC(LA(RIGHT)) &kp LC(LA(ENTER)) &kp LC(LA(LG(LEFT))) &kp LC(LA(LG(RIGHT)))     &kp F11 &kp F12  &kp PRINTSCREEN &kp INS &trans
-		&tog MACBASE &none &none &none &none				          &none &none &none &none &none 
+		&tog MACBASE &none &none &none &tog GAMEMAIN				          &none &none &none &none &none 
           				           &none &none              &none &none  
 		>;
 		};
