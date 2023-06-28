@@ -17,7 +17,7 @@
     #define SYM2 5
     #define MACEXT 6
 	#define GAMEMAIN 7
-	#define GAMENUM 7
+	#define GAMENUM 8
 
 // -----------------
 
