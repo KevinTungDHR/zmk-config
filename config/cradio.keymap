@@ -16,6 +16,8 @@
     #define FNC 4
     #define SYM2 5
     #define MACEXT 6
+	#define QWERTY 7
+	#define GAMENUM 7
 
 // -----------------
 
@@ -116,7 +118,27 @@
 					                                &none &none             &trans  &none
 		>;
 		};
+
+		// Qwerty Layer
+			querty_layer {
+		bindings = <
+		&kp LALT &kp Q &kp W &kp E &kp R 						 &none  &none &none &none &none 
+		&kp SPC &kp A &kp S &kp D &kp F 			        	 &none  &none &none &none &none 
+		&kp LCTRL &kp Z &kp X &kp C &kp V				         &none  &none &none &none &none 
+          				&mo GAMENUM &kp LSHIFT  				&none  &none 
+		>;
+		};
    
+
+   // gaming nums
+			gaming_num_layer {
+	bindings = <
+		&kp NUM_1  &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5        &none  &none &none &none &none 
+		&kp CAPS &none &none &kp B &kp G       &none  &none &none &none &none  
+		&kp ENTER &none &none &none &none			&none  &none &none &none &none 
+          				 &none &none        	                &none &none 
+		>;
+		};
         
 	};
 };
